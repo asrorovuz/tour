@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container{
+    padding: 0 20px;
+}
+
+.active{
+    color: red;
+}
+
+@layer components{
+    
+
+    .link{
+        @apply block text-link-text border-0 border-b border-custom-white-10 text-center text-[15px] h-[50px] leading-[50px] font-normal tracking-[0.5px]
+    }
+}
+
+
+@media only screen and (min-width: 576px) {
+    .container{
+        max-width: 576px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container{
+        max-width: 768px;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container{
+        max-width: 992px;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .container{
+        max-width: 1320px;
+        padding: 0 80px;
+    }
+}
