@@ -3,6 +3,7 @@ import Contact from "./contact/contact";
 import Footer from "./footer/footer";
 import Home from "./home/home";
 import Navbar from "./navbar/navbar";
+import Reservation from "./reservation/reservation";
 import SupportVisa from "./support-visa/support-visa";
 import Tours from "./tours/tours";
 
@@ -17,6 +18,7 @@ function App() {
         <Tours />
         <SupportVisa/>
         <About />
+        <Reservation/>
         <Contact />
       </main>
       <footer>
