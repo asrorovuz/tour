@@ -1,5 +1,6 @@
 import About from "./about/about";
 import Contact from "./contact/contact";
+import Footer from "./footer/footer";
 import Home from "./home/home";
 import Navbar from "./navbar/navbar";
 import SupportVisa from "./support-visa/support-visa";
@@ -18,7 +19,9 @@ function App() {
         <About />
         <Contact />
       </main>
-      <footer></footer>
+      <footer>
+        <Footer/>
+      </footer>
     </>
   );
 }
