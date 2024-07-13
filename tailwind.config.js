@@ -9,6 +9,7 @@ export default {
       colors: {
         "gren-blue": "#22b3c1",
         "custom-white": "#f7f7f7",
+        "custom-white-100": "#f0f0f0",
         "custom-white-10": "#eee",
         "link-text": "#1e1e1e",
         "text": "#afafaf"
