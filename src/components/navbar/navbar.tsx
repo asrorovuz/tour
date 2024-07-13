@@ -8,7 +8,7 @@ const Navbar = () => {
   const linkArr: string[] = ["home", "about", "tours", "contacts"];
 
   return (
-    <div className="min-h-[70px] bg-gren-blue fixed w-full">
+    <div className="min-h-[70px] bg-gren-blue fixed z-50 w-full">
       <div className="container mx-auto">
         <div className="py-[15px] w-full flex items-center justify-between">
           <div className="flex items-center justify-between w-full laptop:w-max">
