@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import logo from "../../assets/logo.svg";
-import { CloseIcon, ToggleIcon } from "../icon";
+import { CloseIcon, Instagram, Telegram, ToggleIcon } from "../icon";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="min-h-[70px] bg-gren-blue fixed w-full">
       <div className="container mx-auto">
         <div className="py-[15px] w-full flex items-center justify-between">
-          <div className="flex items-center justify-between w-full">
+          <div className="flex items-center justify-between w-full laptop:w-max">
             <Link to="/">
               <img src={logo} alt="logo" className="w-[159px]" />
             </Link>
@@ -23,11 +23,11 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="hidden laptop:block">
+          <div className="hidden laptop:flex">
             <nav className="">
               <ul className="flex items-center">
                 {linkArr?.map((elem) => (
-                  <li className="px-[15px]">
+                  <li className="px-[15px]" key={elem}>
                     <Link
                       to={elem}
                       activeClass="active"
@@ -42,6 +42,20 @@ const Navbar = () => {
               </ul>
             </nav>
           </div>
+
+          <div className="hidden laptop:flex gap-x-5">
+            <div>
+              <ul className="flex items-center gap-x-5 text-custom-white uppercase">
+                <li className="cursor-pointer">uz</li>
+                <li className="cursor-pointer">eng</li>
+                <li className="cursor-pointer">ru</li>
+              </ul>
+            </div>
+            <div className="flex items-center gap-x-5 text-custom-white">
+            <Telegram/>
+            <Instagram/>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -50,11 +64,11 @@ const Navbar = () => {
           <nav className="">
             <ul className="">
               {linkArr?.map((elem) => (
-                <li className="px-[15px]">
+                <li key={elem}>
                   <Link
                     to={elem}
                     activeClass="active"
-                    className="link capitalize laptop:text-custom-white laptop:border-0"
+                    className="link capitalize"
                     smooth
                     delay={1000}
                   >
@@ -64,6 +78,19 @@ const Navbar = () => {
               ))}
             </ul>
           </nav>
+          <div className="">
+            <div>
+              <ul className="flex flex-col items-center gap-x-5 text-custom-white uppercase">
+                <li className="w-full cursor-pointer link">uz</li>
+                <li className="w-full cursor-pointer link">eng</li>
+                <li className="w-full cursor-pointer link">ru</li>
+              </ul>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-y-5 pb-5 text-link-text py-2">
+              <Telegram/>
+              <Instagram/>
+            </div>
+          </div>
         </div>
       )}
     </div>

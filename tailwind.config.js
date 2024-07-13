@@ -10,7 +10,8 @@ export default {
         "gren-blue": "#22b3c1",
         "custom-white": "#f7f7f7",
         "custom-white-10": "#eee",
-        "link-text": "#1e1e1e"
+        "link-text": "#1e1e1e",
+        "text": "#afafaf"
       },
       container: {
         "mobile": "20px",
