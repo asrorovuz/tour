@@ -27,7 +27,7 @@ const Home = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="h-[700px] bg-[url('./src/assets/images/istanbul.jpg')] bg-no-repeat bg-center bg-cover">
+          <div className="h-[700px] bg-[url('https://zamontour.uz/assets/images/istanbul.jpg')] bg-no-repeat bg-center bg-cover">
             <div className="h-full flex items-center justify-center flex-col">
               <div className="mb-[60px]">
                 <p className="font-medium text-xl text-white mb-5 text-center">
