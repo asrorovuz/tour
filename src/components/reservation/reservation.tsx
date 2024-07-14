@@ -1,9 +1,8 @@
 import { Link } from "react-scroll";
-import resolImg from "../../assets/images/heading-bg-02.jpg"
 
 const Reservation = () => {
   return (
-    <div className={`bg-[url(${resolImg})] bg-center bg-no-repeat bg-cover pt-64 pb-48`}>
+    <div className={`bg-[url("https://zamontour.uz/assets/images/heading-bg-02.jpg")] bg-center bg-no-repeat bg-cover pt-64 pb-48`}>
       <div className="container mx-auto">
         <div className="text-white flex flex-col items-center text-center">
           <h4 className="capitalize text-xl font-medium mb-[15px] pb-[25px]">

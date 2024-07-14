@@ -1,10 +1,9 @@
 import { Link } from "react-scroll";
-import footerImg from "../../assets/images/cta-bg.jpg"
 
 const Footer = () => {
   return (
     <div>
-      <div className={`bg-[url(${footerImg})] py-[75px] bg-cover bg-center bg-no-repeat`}>
+      <div className={`bg-[url("https://zamontour.uz/assets/images/cta-bg.jpg)] py-[75px] bg-cover bg-center bg-no-repeat`}>
         <div className="container mx-auto">
           <div className="laptop:flex justify-between items-center">
             <div className="text-white mb-10 text-center laptop:text-left laptop:mb-0">
