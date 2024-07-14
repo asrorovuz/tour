@@ -110,7 +110,7 @@ const Home = () => {
                   Take a Glimpse Into The Beautiful City Of:
                 </p>
                 <h1 className="font-bold text-[50px] text-white mb-[30px] text-center">
-                  Istanbul
+                  Antalya
                 </h1>
                 <div className="flex justify-center">
                   <Link
@@ -186,7 +186,7 @@ const Home = () => {
                   Take a Glimpse Into The Beautiful City Of:
                 </p>
                 <h1 className="font-bold text-[50px] text-white mb-[30px] text-center">
-                  Istanbul
+                  Dubai
                 </h1>
                 <div className="flex justify-center">
                   <Link
@@ -262,7 +262,7 @@ const Home = () => {
                   Take a Glimpse Into The Beautiful City Of:
                 </p>
                 <h1 className="font-bold text-[50px] text-white mb-[30px] text-center">
-                  Istanbul
+                  Sharm El-Sheikh
                 </h1>
                 <div className="flex justify-center">
                   <Link

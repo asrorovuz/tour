@@ -31,9 +31,8 @@ const Navbar = () => {
                     <Link
                       to={elem}
                       activeClass="active"
-                      className="link capitalize laptop:text-custom-white laptop:border-0"
+                      className="link capitalize laptop:text-custom-white laptop:border-0 cursor-pointer hover:opacity-80"
                       smooth
-                      delay={1000}
                     >
                       {elem}
                     </Link>
@@ -68,7 +67,7 @@ const Navbar = () => {
                   <Link
                     to={elem}
                     activeClass="active"
-                    className="link capitalize"
+                    className="link capitalize cursor-pointer"
                     smooth
                     delay={1000}
                   >
