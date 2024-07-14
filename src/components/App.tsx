@@ -1,4 +1,5 @@
 import About from "./about/about";
+import BestLocation from "./best-location/best-location";
 import Contact from "./contact/contact";
 import Footer from "./footer/footer";
 import Home from "./home/home";
@@ -18,6 +19,7 @@ function App() {
         <Tours />
         <SupportVisa/>
         <About />
+        <BestLocation/>
         <Reservation/>
         <Contact />
       </main>
