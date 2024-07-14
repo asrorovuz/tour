@@ -46,7 +46,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="container">
-                <div className="w-full py-[30px] px-[60px] bg-white rounded-[60px] flex items-center justify-between gap-x-10">
+                <div className="w-full py-[30px] px-[60px] bg-white rounded-[60px] flex flex-col items-start mobile:flex-row mobile:items-center justify-between flex-wrap gap-x-10 gap-y-5">
                   <div className="flex items-center gap-x-5">
                     <div className="w-[60px] h-[60px] border border-gren-blue flex items-center justify-center rounded-full">
                       <img src={userIcon} alt="icon" />
@@ -122,7 +122,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="container">
-                <div className="w-full py-[30px] px-[60px] bg-white rounded-[60px] flex items-center justify-between gap-x-10">
+                <div className="w-full py-[30px] px-[60px] bg-white rounded-[60px] flex flex-col items-start mobile:flex-row mobile:items-center justify-between flex-wrap gap-x-10 gap-y-5">
                   <div className="flex items-center gap-x-5">
                     <div className="w-[60px] h-[60px] border border-gren-blue flex items-center justify-center rounded-full">
                       <img src={userIcon} alt="icon" />
@@ -138,7 +138,7 @@ const Home = () => {
                   </div>
 
                   <div className="flex items-center gap-x-5">
-                    <div className="w-[60px] h-[60px] border border-gren-blue flex items-center justify-center rounded-full">
+                    <div className="w-[60px] h-[60px] border border-gren-blue flex justify-center rounded-full">
                       <img src={globalIcon} alt="icon" />
                     </div>
                     <div>
@@ -198,7 +198,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="container">
-                <div className="w-full py-[30px] px-[60px] bg-white rounded-[60px] flex items-center justify-between gap-x-10">
+                <div className="w-full py-[30px] px-[60px] bg-white rounded-[60px] flex flex-col items-start mobile:flex-row mobile:items-center justify-between flex-wrap gap-x-10 gap-y-5">
                   <div className="flex items-center gap-x-5">
                     <div className="w-[60px] h-[60px] border border-gren-blue flex items-center justify-center rounded-full">
                       <img src={userIcon} alt="icon" />
@@ -274,7 +274,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="container">
-                <div className="w-full py-[30px] px-[60px] bg-white rounded-[60px] flex items-center justify-between gap-x-10">
+                <div className="w-full py-[30px] px-[60px] bg-white rounded-[60px] flex flex-col items-start mobile:flex-row mobile:items-center justify-between flex-wrap gap-x-10 gap-y-5">
                   <div className="flex items-center gap-x-5">
                     <div className="w-[60px] h-[60px] border border-gren-blue flex items-center justify-center rounded-full">
                       <img src={userIcon} alt="icon" />
