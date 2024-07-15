@@ -1,6 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
 const Footer = () => {
+
+  const {t} = useTranslation() 
+
   return (
     <div>
       <div className={`bg-[url(https://zamontour.uz/assets/images/cta-bg.jpg)] py-[75px] bg-cover bg-center bg-no-repeat`}>
@@ -8,10 +12,10 @@ const Footer = () => {
           <div className="laptop:flex justify-between items-center">
             <div className="text-white mb-10 text-center laptop:text-left laptop:mb-0">
               <h2 className="uppercase text-[40px] mb-[10px] font-bold">
-                ARE YOU LOOKING TO TRAVEL ?
+                {t("footer-t")}
               </h2>
               <h4 className="capitalize text-xl font-semibold tracking-[0.5px]">
-                Make A Reservation By Clicking The Button
+              {t("footer-c")}
               </h4>
             </div>
             <div className="flex justify-center laptop:justify-end">

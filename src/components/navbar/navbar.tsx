@@ -2,10 +2,21 @@ import { Link } from "react-scroll";
 import logo from "../../assets/logo.svg";
 import { CloseIcon, Instagram, Telegram, ToggleIcon } from "../icon";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
+  
   const linkArr: string[] = ["home", "about", "tours", "contacts"];
+
+  const { t } = useTranslation();
+
+  const handleChangeLang = (e: any) => {
+    const languageSelect = e.target.innerText.toLowerCase();
+
+    i18n.changeLanguage(languageSelect);
+  };
 
   return (
     <div className="min-h-[70px] bg-gren-blue fixed z-50 w-full">
@@ -34,7 +45,7 @@ const Navbar = () => {
                       className="link capitalize laptop:text-custom-white laptop:border-0 cursor-pointer hover:opacity-80"
                       smooth
                     >
-                      {elem}
+                      {t(elem)}
                     </Link>
                   </li>
                 ))}
@@ -44,15 +55,18 @@ const Navbar = () => {
 
           <div className="hidden laptop:flex gap-x-5">
             <div>
-              <ul className="flex items-center gap-x-5 text-custom-white uppercase">
+              <ul
+                className="flex items-center gap-x-5 text-custom-white uppercase"
+                onClick={(e) => handleChangeLang(e)}
+              >
                 <li className="cursor-pointer">uz</li>
                 <li className="cursor-pointer">eng</li>
                 <li className="cursor-pointer">ru</li>
               </ul>
             </div>
             <div className="flex items-center gap-x-5 text-custom-white">
-            <Telegram/>
-            <Instagram/>
+              <Telegram />
+              <Instagram />
             </div>
           </div>
         </div>
@@ -71,7 +85,7 @@ const Navbar = () => {
                     smooth
                     delay={1000}
                   >
-                    {elem}
+                    {t(elem)}
                   </Link>
                 </li>
               ))}
@@ -79,15 +93,18 @@ const Navbar = () => {
           </nav>
           <div className="">
             <div>
-              <ul className="flex flex-col items-center gap-x-5 text-custom-white uppercase">
+              <ul
+                className="flex flex-col items-center gap-x-5 text-custom-white uppercase"
+                onClick={(e) => handleChangeLang(e)}
+              >
                 <li className="w-full cursor-pointer link">uz</li>
                 <li className="w-full cursor-pointer link">eng</li>
                 <li className="w-full cursor-pointer link">ru</li>
               </ul>
             </div>
             <div className="flex flex-col items-center justify-center gap-y-5 pb-5 text-link-text py-2">
-              <Telegram/>
-              <Instagram/>
+              <Telegram />
+              <Instagram />
             </div>
           </div>
         </div>
