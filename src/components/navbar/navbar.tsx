@@ -83,7 +83,7 @@ const Navbar = () => {
                     activeClass="active"
                     className="link capitalize cursor-pointer"
                     smooth
-                    delay={1000}
+                    onClick={() => setIsOpenMenu(false)}
                   >
                     {t(elem)}
                   </Link>

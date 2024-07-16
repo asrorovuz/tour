@@ -1,4 +1,6 @@
 {
+    "btn-go": "Go there",
+    "btn-exp":"Explore more",
     "home": "home",
     "about": "about",
     "tours": "tours",
@@ -13,6 +15,17 @@
     "population": "population",
     "territory": "territory",
     "price": "AVG Price",
-    "btn-go": "Go there",
-    "btn-exp":"Explore more"  
+    "tour-title": "Best Weekly Offers In Each City",
+    "tour-c": "Discover the best weekly offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.",
+    "tour-card-c": "Canada",
+    "tour-card-u": "USA",
+    "tour-card-e": "England",
+    "check": "Check Ins",
+    "person": "person",
+    "includ": "Deal Includes",
+    "car-metr": "Days Trip > Hotel Included",
+    "air-metr": "Airplane Bill Included",
+    "home-metr": "Daily Places Visit",
+    "support-title": "Visa Support",
+    "support-c": "Experience stress-free travel with our expert visa support. We provide seamless assistance and comprehensive guidance, ensuring a smooth journey."
 }

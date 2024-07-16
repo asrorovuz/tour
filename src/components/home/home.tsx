@@ -15,7 +15,7 @@ const Home = () => {
   const {t} = useTranslation()
 
   return (
-    <div id="home" className="-translate-y-[30px]">
+    <div id="home" className="">
       <Swiper
         centeredSlides={true}
         loop
@@ -23,9 +23,6 @@ const Home = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        // pagination={{
-        //   clickable: true,
-        // }}
         navigation={true}
         modules={[Autoplay]}
         className="mySwiper"
@@ -111,7 +108,7 @@ const Home = () => {
             <div className="h-full flex items-center justify-center flex-col">
               <div className="mb-[60px]">
                 <p className="font-medium text-xl text-white mb-5 text-center">
-                  {t("banner-c")}
+                  {t("home-c")}
                 </p>
                 <h1 className="font-bold text-[50px] text-white mb-[30px] text-center">
                   {t("banner-ant")}
@@ -187,7 +184,7 @@ const Home = () => {
             <div className="h-full flex items-center justify-center flex-col">
               <div className="mb-[60px]">
                 <p className="font-medium text-xl text-white mb-5 text-center">
-                  {t("banner-c")}
+                  {t("home-c")}
                 </p>
                 <h1 className="font-bold text-[50px] text-white mb-[30px] text-center">
                   {t("banner-dubai")}
@@ -263,7 +260,7 @@ const Home = () => {
             <div className="h-full flex items-center justify-center flex-col">
               <div className="mb-[60px]">
                 <p className="font-medium text-xl text-white mb-5 text-center">
-                  {t("banner-c")}
+                  {t("home-c")}
                 </p>
                 <h1 className="font-bold text-[50px] text-white mb-[30px] text-center">
                   {t("banner-sharm")}

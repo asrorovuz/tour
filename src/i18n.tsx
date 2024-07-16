@@ -7,6 +7,8 @@ import uzTranslation from "../public/locales/uz.json"
 import enTranslation from "../public/locales/en.json"
 import ruTranslation from "../public/locales/ru.json"
 
+const languageDefault = localStorage.getItem("i18nextLng") || "uz"
+
 i18n
 .use(Backend)
 //tilni aniqlash
@@ -16,7 +18,7 @@ i18n
 //@ts-ignore
 .init({
     fallbackLng: "en",
-    lng: "uz",
+    lng: languageDefault,
     debug: true,
     resources: {
         uz: {translation: uzTranslation},

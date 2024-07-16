@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SlideCard from "../slide-card/slide-card";
 
 export interface ISlideCard {
@@ -10,6 +10,24 @@ export interface ISlideCard {
 }
 
 const BestLocation = () => {
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const [widthCount, setWidthCount] = useState(3)
+
+  useEffect(() => {
+    const newWidth = window.innerWidth 
+    setWidth(newWidth);
+
+    if(newWidth > 718){
+      setWidthCount(5)
+    }else if(newWidth <= 718 && newWidth > 638){
+      setWidthCount(4)
+    }else{
+      setWidthCount(3)
+    }
+    
+  }, [width]);
+
     const [data, setData] = useState<ISlideCard[]>([
         {
           id: "1",
@@ -77,7 +95,7 @@ const BestLocation = () => {
           className="max-w-[616px] mx-auto relative flex gap-x-[10px]"
           onClick={(e) => onChangeWidth(e)}
         >
-          {data?.map((item) => {
+          {data?.slice(0, widthCount)?.map((item) => {
             return <SlideCard item={item} key={item.id}/>;
           })}
         </div>

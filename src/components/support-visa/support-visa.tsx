@@ -15,22 +15,39 @@ import {
 
 import candImg from "../../assets/images/hongkong.jpg";
 import { Link } from "react-scroll";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const SupportVisa = () => {
   const swiper = useRef(null);
+  const [width, setWidth] = useState(window.innerWidth);
+  const [widthCount, setWidthCount] = useState(3)
+
+  useEffect(() => {
+    const newWidth = window.innerWidth 
+    setWidth(newWidth);
+
+    if(newWidth > 1300){
+      setWidthCount(3)
+    }else if(newWidth <= 1300 && newWidth > 800){
+      setWidthCount(2)
+    }else{
+      setWidthCount(1)
+    }
+    
+  }, [width]);
+
+  const {t} = useTranslation()
 
   return (
     <div id="tour" className="py-[70px] border-b">
       <div className="container mx-auto">
         <div className="max-w-[60%] text-center mx-auto mb-20">
           <h2 className="mb-5 text-3xl font-bold capitalize text-link-text">
-            Visa Support
+            {t("support-title")}
           </h2>
-          <p className="text-[15px] text-text">
-            Experience stress-free travel with our expert visa support. We
-            provide seamless assistance and comprehensive guidance, ensuring a
-            smooth journey.
+          <p className="text-[15px] text-text leading-[30px]">
+          {t("support-c")}
           </p>
         </div>
         <div className="relative" id="support-second">
@@ -45,10 +62,10 @@ const SupportVisa = () => {
               disableOnInteraction: false,
             }}
             loop={true}
-            slidesPerView={3}
+            slidesPerView={widthCount}
             spaceBetween={30}
             modules={[Navigation, Autoplay]}
-            className="mySwiper mb-10"
+            className="mySwiper mb-10 pb-10 px-1"
           >
             <SwiperSlide>
               <div className="relative">
@@ -57,34 +74,33 @@ const SupportVisa = () => {
                 </div>
                 <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
-                    Canada <span className="text-gren-blue">$600</span>
+                    {t("tour-card-c")}{" "}
+                    <span className="text-gren-blue">$600</span>
                   </h4>
                   <h6 className="flex justify-between items-center text-[15px] text-text border-b border-b-custom-white-10 pb-4 mb-4">
                     <div className="flex items-center">
                       <span className="mr-2">
                         <People />
                       </span>
-                      Check Ins
+                      {t("check")}
                     </div>
-                    <div>/person</div>
+                    <div>/{t("person")}</div>
                   </h6>
                   <ul className="text-text flex flex-col gap-y-[10px] mb-10">
                     <li className="font-semibold text-link-text text-[15px]">
-                      Deal Includes:
+                      {t("includ")}:
                     </li>
                     <li className="flex items-center">
                       <CarIcon />{" "}
-                      <span className="ml-1">
-                        5 Days Trip &gt; Hotel Included
-                      </span>
+                      <span className="ml-1">5 {t("car-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <PlaneIcon />{" "}
-                      <span className="ml-1"> Airplane Bill Included</span>
+                      <span className="ml-1">{t("air-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> Daily Places Visit</span>
+                      <span className="ml-1"> {t("home-metr")}</span>
                     </li>
                   </ul>
                   <div>
@@ -107,34 +123,33 @@ const SupportVisa = () => {
                 </div>
                 <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
-                    Canada <span className="text-gren-blue">$600</span>
+                    {t("tour-card-c")}{" "}
+                    <span className="text-gren-blue">$600</span>
                   </h4>
                   <h6 className="flex justify-between items-center text-[15px] text-text border-b border-b-custom-white-10 pb-4 mb-4">
                     <div className="flex items-center">
                       <span className="mr-2">
                         <People />
                       </span>
-                      Check Ins
+                      {t("check")}
                     </div>
-                    <div>/person</div>
+                    <div>/{t("person")}</div>
                   </h6>
                   <ul className="text-text flex flex-col gap-y-[10px] mb-10">
                     <li className="font-semibold text-link-text text-[15px]">
-                      Deal Includes:
+                      {t("includ")}:
                     </li>
                     <li className="flex items-center">
                       <CarIcon />{" "}
-                      <span className="ml-1">
-                        5 Days Trip &gt; Hotel Included
-                      </span>
+                      <span className="ml-1">5 {t("car-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <PlaneIcon />{" "}
-                      <span className="ml-1"> Airplane Bill Included</span>
+                      <span className="ml-1">{t("air-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> Daily Places Visit</span>
+                      <span className="ml-1"> {t("home-metr")}</span>
                     </li>
                   </ul>
                   <div>
@@ -157,34 +172,33 @@ const SupportVisa = () => {
                 </div>
                 <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
-                    Canada <span className="text-gren-blue">$600</span>
+                    {t("tour-card-c")}{" "}
+                    <span className="text-gren-blue">$600</span>
                   </h4>
                   <h6 className="flex justify-between items-center text-[15px] text-text border-b border-b-custom-white-10 pb-4 mb-4">
                     <div className="flex items-center">
                       <span className="mr-2">
                         <People />
                       </span>
-                      Check Ins
+                      {t("check")}
                     </div>
-                    <div>/person</div>
+                    <div>/{t("person")}</div>
                   </h6>
                   <ul className="text-text flex flex-col gap-y-[10px] mb-10">
                     <li className="font-semibold text-link-text text-[15px]">
-                      Deal Includes:
+                      {t("includ")}:
                     </li>
                     <li className="flex items-center">
                       <CarIcon />{" "}
-                      <span className="ml-1">
-                        5 Days Trip &gt; Hotel Included
-                      </span>
+                      <span className="ml-1">5 {t("car-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <PlaneIcon />{" "}
-                      <span className="ml-1"> Airplane Bill Included</span>
+                      <span className="ml-1">{t("air-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> Daily Places Visit</span>
+                      <span className="ml-1"> {t("home-metr")}</span>
                     </li>
                   </ul>
                   <div>
@@ -207,34 +221,33 @@ const SupportVisa = () => {
                 </div>
                 <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
-                    Canada <span className="text-gren-blue">$600</span>
+                    {t("tour-card-c")}{" "}
+                    <span className="text-gren-blue">$600</span>
                   </h4>
                   <h6 className="flex justify-between items-center text-[15px] text-text border-b border-b-custom-white-10 pb-4 mb-4">
                     <div className="flex items-center">
                       <span className="mr-2">
                         <People />
                       </span>
-                      Check Ins
+                      {t("check")}
                     </div>
-                    <div>/person</div>
+                    <div>/{t("person")}</div>
                   </h6>
                   <ul className="text-text flex flex-col gap-y-[10px] mb-10">
                     <li className="font-semibold text-link-text text-[15px]">
-                      Deal Includes:
+                      {t("includ")}:
                     </li>
                     <li className="flex items-center">
                       <CarIcon />{" "}
-                      <span className="ml-1">
-                        5 Days Trip &gt; Hotel Included
-                      </span>
+                      <span className="ml-1">5 {t("car-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <PlaneIcon />{" "}
-                      <span className="ml-1"> Airplane Bill Included</span>
+                      <span className="ml-1">{t("air-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> Daily Places Visit</span>
+                      <span className="ml-1"> {t("home-metr")}</span>
                     </li>
                   </ul>
                   <div>
@@ -257,34 +270,33 @@ const SupportVisa = () => {
                 </div>
                 <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
-                    Canada <span className="text-gren-blue">$600</span>
+                    {t("tour-card-c")}{" "}
+                    <span className="text-gren-blue">$600</span>
                   </h4>
                   <h6 className="flex justify-between items-center text-[15px] text-text border-b border-b-custom-white-10 pb-4 mb-4">
                     <div className="flex items-center">
                       <span className="mr-2">
                         <People />
                       </span>
-                      Check Ins
+                      {t("check")}
                     </div>
-                    <div>/person</div>
+                    <div>/{t("person")}</div>
                   </h6>
                   <ul className="text-text flex flex-col gap-y-[10px] mb-10">
                     <li className="font-semibold text-link-text text-[15px]">
-                      Deal Includes:
+                      {t("includ")}:
                     </li>
                     <li className="flex items-center">
                       <CarIcon />{" "}
-                      <span className="ml-1">
-                        5 Days Trip &gt; Hotel Included
-                      </span>
+                      <span className="ml-1">5 {t("car-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <PlaneIcon />{" "}
-                      <span className="ml-1"> Airplane Bill Included</span>
+                      <span className="ml-1">{t("air-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> Daily Places Visit</span>
+                      <span className="ml-1"> {t("home-metr")}</span>
                     </li>
                   </ul>
                   <div>
@@ -307,34 +319,33 @@ const SupportVisa = () => {
                 </div>
                 <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
-                    Canada <span className="text-gren-blue">$600</span>
+                    {t("tour-card-c")}{" "}
+                    <span className="text-gren-blue">$600</span>
                   </h4>
                   <h6 className="flex justify-between items-center text-[15px] text-text border-b border-b-custom-white-10 pb-4 mb-4">
                     <div className="flex items-center">
                       <span className="mr-2">
                         <People />
                       </span>
-                      Check Ins
+                      {t("check")}
                     </div>
-                    <div>/person</div>
+                    <div>/{t("person")}</div>
                   </h6>
                   <ul className="text-text flex flex-col gap-y-[10px] mb-10">
                     <li className="font-semibold text-link-text text-[15px]">
-                      Deal Includes:
+                      {t("includ")}:
                     </li>
                     <li className="flex items-center">
                       <CarIcon />{" "}
-                      <span className="ml-1">
-                        5 Days Trip &gt; Hotel Included
-                      </span>
+                      <span className="ml-1">5 {t("car-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <PlaneIcon />{" "}
-                      <span className="ml-1"> Airplane Bill Included</span>
+                      <span className="ml-1">{t("air-metr")}</span>
                     </li>
                     <li className="flex items-center">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> Daily Places Visit</span>
+                      <span className="ml-1"> {t("home-metr")}</span>
                     </li>
                   </ul>
                   <div>
