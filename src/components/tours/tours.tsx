@@ -67,9 +67,9 @@ const Tours = () => {
             <SwiperSlide>
               <div className="relative">
                 <div className="w-[65%] min-h-[420px]">
-                  <img src={candImg} alt="img" className="rounded-l-[32px]" />
+                  <img src={candImg} alt="img" className="rounded-l-[32px] object-cover" />
                 </div>
-                <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
+                <div className="absolute top-[50px] right-0 w-auto desktop:w-[90%] rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
                     {t("tour-card-c")}{" "}
                     <span className="text-gren-blue">$600</span>
@@ -87,17 +87,17 @@ const Tours = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      5 {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1">{t("air-metr")}</span>
+                      {t("air-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>
@@ -116,9 +116,9 @@ const Tours = () => {
             <SwiperSlide>
               <div className="relative">
                 <div className="w-[65%] min-h-[420px]">
-                  <img src={candImg} alt="img" className="rounded-l-[32px]" />
+                  <img src={candImg} alt="img" className="rounded-l-[32px] object-cover" />
                 </div>
-                <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
+                <div className="absolute top-[50px] right-0 w-auto desktop:w-[90%] rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
                     {t("tour-card-u")}{" "}
                     <span className="text-gren-blue">$600</span>
@@ -136,17 +136,17 @@ const Tours = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      5 {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1"> {t("air-metr")}</span>
+                      <span className="ml-1 text-[14px]"> {t("air-metr")}</span>
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>
@@ -165,9 +165,9 @@ const Tours = () => {
             <SwiperSlide>
               <div className="relative">
                 <div className="w-[65%] min-h-[420px]">
-                  <img src={candImg} alt="img" className="rounded-l-[32px]" />
+                  <img src={candImg} alt="img" className="rounded-l-[32px] object-cover" />
                 </div>
-                <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
+                <div className="absolute top-[50px] right-0 w-auto desktop:w-[90%] rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
                     {t("tour-card-e")}{" "}
                     <span className="text-gren-blue">$600</span>
@@ -185,17 +185,17 @@ const Tours = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      5 {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1"> {t("air-metr")}</span>
+                      <span className="ml-1 text-[14px]"> {t("air-metr")}</span>
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>
@@ -214,9 +214,9 @@ const Tours = () => {
             <SwiperSlide>
               <div className="relative">
                 <div className="w-[65%] min-h-[420px]">
-                  <img src={candImg} alt="img" className="rounded-l-[32px]" />
+                  <img src={candImg} alt="img" className="rounded-l-[32px] object-cover" />
                 </div>
-                <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
+                <div className="absolute top-[50px] right-0 w-auto desktop:w-[90%] rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
                     {t("tour-card-c")}{" "}
                     <span className="text-gren-blue">$600</span>
@@ -234,17 +234,17 @@ const Tours = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      5 {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1"> {t("air-metr")}</span>
+                      <span className="ml-1 text-[14px]"> {t("air-metr")}</span>
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>
@@ -263,9 +263,9 @@ const Tours = () => {
             <SwiperSlide>
               <div className="relative">
                 <div className="w-[65%] min-h-[420px]">
-                  <img src={candImg} alt="img" className="rounded-l-[32px]" />
+                  <img src={candImg} alt="img" className="rounded-l-[32px] object-cover" />
                 </div>
-                <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
+                <div className="absolute top-[50px] right-0 w-auto desktop:w-[90%] rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
                     {t("tour-card-c")}{" "}
                     <span className="text-gren-blue">$600</span>
@@ -283,17 +283,17 @@ const Tours = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      5 {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1"> {t("air-metr")}</span>
+                      <span className="ml-1 text-[14px]"> {t("air-metr")}</span>
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>
@@ -312,9 +312,9 @@ const Tours = () => {
             <SwiperSlide>
               <div className="relative">
                 <div className="w-[65%] min-h-[420px]">
-                  <img src={candImg} alt="img" className="rounded-l-[32px]" />
+                  <img src={candImg} alt="img" className="rounded-l-[32px] object-cover" />
                 </div>
-                <div className="absolute top-[50px] right-0 -translate-1/2 rounded-[23px] bg-white p-[30px] z-20 shadow-card">
+                <div className="absolute top-[50px] right-0 w-auto desktop:w-[90%] rounded-[23px] bg-white p-[30px] z-20 shadow-card">
                   <h4 className="flex items-center justify-between text-xl font-bold text-link-text mb-2">
                     {t("tour-card-c")}{" "}
                     <span className="text-gren-blue">$600</span>
@@ -332,17 +332,17 @@ const Tours = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      5 {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1"> {t("air-metr")}</span>
+                      <span className="ml-1 text-[14px]"> {t("air-metr")}</span>
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>

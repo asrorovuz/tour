@@ -27,6 +27,10 @@
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
+.item-card {
+  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
 @layer components {
   .link {
     @apply block text-link-text border-0 border-b border-custom-white-10 text-center text-[15px] h-[50px] leading-[50px] font-normal tracking-[0.5px];
@@ -62,7 +66,7 @@
 
 @media only screen and (min-width: 1400px) {
   .container {
-    max-width: 1320px;
-    padding: 0 80px;
+    max-width: 1360px;
+    padding: 0 40px;
   }
 }

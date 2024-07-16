@@ -90,17 +90,17 @@ const SupportVisa = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1">{t("air-metr")}</span>
+                      {t("air-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>
@@ -139,17 +139,17 @@ const SupportVisa = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1">{t("air-metr")}</span>
+                      {t("air-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>
@@ -188,17 +188,17 @@ const SupportVisa = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1">{t("air-metr")}</span>
+                      {t("air-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>
@@ -237,17 +237,17 @@ const SupportVisa = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1">{t("air-metr")}</span>
+                      {t("air-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>
@@ -286,17 +286,17 @@ const SupportVisa = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1">{t("air-metr")}</span>
+                      {t("air-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>
@@ -335,17 +335,17 @@ const SupportVisa = () => {
                     <li className="font-semibold text-link-text text-[15px]">
                       {t("includ")}:
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <CarIcon />{" "}
-                      <span className="ml-1">5 {t("car-metr")}</span>
+                      {t("car-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <PlaneIcon />{" "}
-                      <span className="ml-1">{t("air-metr")}</span>
+                      {t("air-metr")}
                     </li>
-                    <li className="flex items-center">
+                    <li className="flex items-start gap-x-2 text-[13px]">
                       <BuildIcon />{" "}
-                      <span className="ml-1"> {t("home-metr")}</span>
+                      {t("home-metr")}
                     </li>
                   </ul>
                   <div>
