@@ -54,7 +54,7 @@ const Home = () => {
                     </div>
                     <div>
                       <span className="text-[15px] text-text font-normal capitalize">
-                        {("population")}:
+                        {t("population")}:
                       </span>
                       <h2 className="text-xl text-gren-blue font-bold ">
                         44.48M
@@ -130,7 +130,7 @@ const Home = () => {
                     </div>
                     <div>
                       <span className="text-[15px] text-text font-normal capitalize">
-                        {("population")}:
+                        {t("population")}:
                       </span>
                       <h2 className="text-xl text-gren-blue font-bold ">
                         8.66M
@@ -206,7 +206,7 @@ const Home = () => {
                     </div>
                     <div>
                       <span className="text-[15px] text-text font-normal capitalize">
-                        {("population")}:
+                        {t("population")}:
                       </span>
                       <h2 className="text-xl text-gren-blue font-bold ">
                         67.41 M
@@ -282,7 +282,7 @@ const Home = () => {
                     </div>
                     <div>
                       <span className="text-[15px] text-text font-normal capitalize">
-                        {("population")}:
+                        {t("population")}:
                       </span>
                       <h2 className="text-xl text-gren-blue font-bold ">
                         69.86 M
