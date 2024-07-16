@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 
 interface IData {
   name: string;
@@ -40,6 +41,8 @@ const ContactForm = () => {
     sendMessage(data);
   };
 
+  const {t} = useTranslation()
+
   return (
     <form
       className="px-[30px] pb-[45px] flex flex-wrap gap-x-5 justify-between"
@@ -47,7 +50,7 @@ const ContactForm = () => {
     >
       <div className="w-full laptop:w-[48%] mb-[30px]">
         <label htmlFor="name" className="block text-[15px] text-text mb-3">
-          Your Name
+          {t("form-label-1")}
         </label>
         <input
           type="text"
@@ -56,7 +59,7 @@ const ContactForm = () => {
             pattern: { value: /^[A-Za-z\s]+$/i, message: "Invalid name" },
           })}
           id="name"
-          placeholder="Ex. John Smithee"
+          placeholder={t("form-input-1")}
           className="bg-transparent h-11 rounded-[23px] border border-[#d0d0d0] px-5 w-full focus-visible:outline focus-visible:outline-gren-blue"
         />
         {errors.name && <p className="text-red-500">{errors.name.message}</p>}
@@ -64,7 +67,7 @@ const ContactForm = () => {
 
       <div className="w-full laptop:w-[48%] mb-[30px]">
         <label htmlFor="phone" className="block text-[15px] text-text mb-3">
-          Your Phone Number +
+        {t("form-label-2")} +
         </label>
         <input
           type="text"
@@ -73,7 +76,7 @@ const ContactForm = () => {
             pattern: { value: /^[0-9\s]+$/i, message: "Invalid phone number" },
           })}
           id="phone"
-          placeholder="Ex. 99899 999 99 99"
+          placeholder={t("form-input-2")}
           className="bg-transparent h-11 rounded-[23px] border border-[#d0d0d0] px-5 w-full focus-visible:outline focus-visible:outline-gren-blue"
         />
         {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
@@ -81,7 +84,7 @@ const ContactForm = () => {
 
       <div className="w-full laptop:w-[48%] mb-[30px]">
         <label htmlFor="guests" className="block text-[15px] text-text mb-3">
-          Number of Guests
+        {t("form-label-3")}
         </label>
         <select
           {...register("guests", {
@@ -91,7 +94,7 @@ const ContactForm = () => {
           id="guests"
           className="bg-transparent h-11 rounded-[23px] border border-[#d0d0d0] px-5 w-full focus-visible:outline focus-visible:outline-gren-blue"
         >
-          <option value="">Select number of guests</option>
+          <option value="">{t("form-input-3")}</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -104,7 +107,7 @@ const ContactForm = () => {
 
       <div className="w-full laptop:w-[48%] mb-[30px]">
         <label htmlFor="date" className="block text-[15px] text-text mb-3">
-          Check In Date
+        {t("form-label-4")}
         </label>
         <input
           type="date"
@@ -122,7 +125,7 @@ const ContactForm = () => {
           htmlFor="destination"
           className="block text-[15px] text-text mb-3"
         >
-          Choose Your Destination
+          {t("form-label-5")}
         </label>
         <select
           {...register("destination")}
@@ -145,7 +148,7 @@ const ContactForm = () => {
           htmlFor="visa_support"
           className="block text-[15px] text-text mb-3"
         >
-          Choose Your Visa Support
+          {t("form-label-6")}
         </label>
         <select
           {...register("visa_support")}
@@ -170,7 +173,7 @@ const ContactForm = () => {
           type="submit"
           className="text-[14px] text-white bg-gren-blue border border-gren-blue py-3 px-[30px] w-full rounded-[25px] font-medium capitalize tracking-[0.5px] hover:opacity-90 transition"
         >
-          Make Your Reservation Now
+          {t("btn-contact")}
         </button>
       </div>
     </form>

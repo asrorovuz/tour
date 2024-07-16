@@ -23,7 +23,7 @@ const Footer = () => {
                 to="contacts"
                 className="capitalize border border-white text-white text-[14px] tracking-[0.5px] py-3 px-[30px] font-medium rounded-[25px] cursor-pointer bg-gren-blue hover:bg-white hover:text-gren-blue"
               >
-                book yours now
+                {t("btn-footer")}
               </Link>
             </div>
           </div>

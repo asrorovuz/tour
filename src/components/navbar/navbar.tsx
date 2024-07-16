@@ -7,7 +7,7 @@ import i18n from "../../i18n";
 
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
-  
+
   const linkArr: string[] = ["home", "about", "tours", "contacts"];
 
   const { t } = useTranslation();
@@ -65,8 +65,18 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="flex items-center gap-x-5 text-custom-white">
-              <Telegram />
-              <Instagram />
+              <a
+                href="https://t.me/asrorov_official_uz"
+                className="cursor-pointer"
+              >
+                <Telegram />
+              </a>
+              <a
+                href="https://www.instagram.com/sardor09567?utm_source=qr&igsh=MTd0djR1dWw5Y3UwYw=="
+                className="cursor-pointer"
+              >
+                <Instagram />
+              </a>
             </div>
           </div>
         </div>
@@ -103,8 +113,18 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="flex flex-col items-center justify-center gap-y-5 pb-5 text-link-text py-2">
-              <Telegram />
-              <Instagram />
+              <a
+                href="https://t.me/asrorov_official_uz"
+                className="cursor-pointer"
+              >
+                <Telegram />
+              </a>
+              <a
+                href="https://www.instagram.com/sardor09567?utm_source=qr&igsh=MTd0djR1dWw5Y3UwYw=="
+                className="cursor-pointer"
+              >
+                <Instagram />
+              </a>
             </div>
           </div>
         </div>

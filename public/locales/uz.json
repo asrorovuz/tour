@@ -1,4 +1,8 @@
 {
+    "btn-footer": "Bog'lanish",
+    "btn-contact": "Band qilish",
+    "btn-disc": "Ko'proq bilish...", 
+    "btn-exp": "Ko'proq bilish...",
     "home": "bosh sahifa",
     "about": "biz haqimizda",
     "tours": "turlar",
@@ -6,7 +10,7 @@
     "footer-t": "SAYOHAT QILISHNI XOHLAYSIZMI?",
     "footer-c": "Unda biz bilan hoziroq bog'laning",
     "home-c": "Siz yoqtirib qolishingiz aniq bo'lgan shahar:",
-    "banner-ist": "Стамбул",
+    "banner-ist": "Istanbul",
     "banner-ant": "Antalya",
     "banner-sharm": "Sharm El-Sheikh",
     "banner-dubai": "Dubai",
@@ -14,7 +18,6 @@
     "territory": "Hududi:",
     "price": "O'rtacha narx:",
     "btn-go": "Borishni xohlaysizmi?",
-    "btn-exp":"Ko'proq bilish...",
     "tour-title": "Eng Yaxshi Haftalik Takliflarimiz",
     "tour-c": "Har bir shaharda faqat siz uchun tuzilgan eng yaxshi haftalik takliflarni kashf eting. O'zingizni sarguzashtlar dunyosida his qiling.",
     "tour-card-c": "Kanada",
@@ -46,5 +49,16 @@
     "contact-t-2": "O'z",
     "contact-t-3": "joyingizni",
     "contact-t-4": "band",
-    "contact-t-5": "qiling" 
+    "contact-t-5": "qiling",
+    "form-label-1": "Ismingiz" ,
+    "form-label-2": "Telefon raqamingiz" ,
+    "form-label-3": "Necha kishisiz" ,
+    "form-label-4": "Uchish sanasi" ,
+    "form-label-5": "Manzilingizni tanlang" ,
+    "form-label-6": "Visa turini tanlang", 
+   "form-input-1": "Ex. John Smithee",
+   "form-input-2": "Ex. 99899 999 99 99",
+   "form-input-3": "ex. 3 or 4 or 5",
+   "rever-title": "O'z joyingizni band qiling",
+  "rever-c": "O'zingiz yoqtirganingizni tanlang" 
 }

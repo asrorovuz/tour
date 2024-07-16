@@ -107,7 +107,7 @@ const Tours = () => {
                       delay={1000}
                       className="cursor-pointer w-full bg-gren-blue border border-gren-blue py-3 px-[30px] text-[14px] rounded-3xl tracking-[0.5px] transition hover:opacity-90 text-custom-white capitalize"
                     >
-                      make a reservation
+                      {t("btn-exp")}
                     </Link>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ const Tours = () => {
                       delay={1000}
                       className="cursor-pointer w-full bg-gren-blue border border-gren-blue py-3 px-[30px] text-[14px] rounded-3xl tracking-[0.5px] transition hover:opacity-90 text-custom-white capitalize"
                     >
-                      make a reservation
+                      {t("btn-exp")}
                     </Link>
                   </div>
                 </div>
@@ -205,7 +205,7 @@ const Tours = () => {
                       delay={1000}
                       className="cursor-pointer w-full bg-gren-blue border border-gren-blue py-3 px-[30px] text-[14px] rounded-3xl tracking-[0.5px] transition hover:opacity-90 text-custom-white capitalize"
                     >
-                      make a reservation
+                      {t("btn-exp")}
                     </Link>
                   </div>
                 </div>
@@ -254,7 +254,7 @@ const Tours = () => {
                       delay={1000}
                       className="cursor-pointer w-full bg-gren-blue border border-gren-blue py-3 px-[30px] text-[14px] rounded-3xl tracking-[0.5px] transition hover:opacity-90 text-custom-white capitalize"
                     >
-                      make a reservation
+                      {t("btn-exp")}
                     </Link>
                   </div>
                 </div>
@@ -303,7 +303,7 @@ const Tours = () => {
                       delay={1000}
                       className="cursor-pointer w-full bg-gren-blue border border-gren-blue py-3 px-[30px] text-[14px] rounded-3xl tracking-[0.5px] transition hover:opacity-90 text-custom-white capitalize"
                     >
-                      make a reservation
+                      {t("btn-exp")}
                     </Link>
                   </div>
                 </div>
@@ -352,7 +352,7 @@ const Tours = () => {
                       delay={1000}
                       className="cursor-pointer w-full bg-gren-blue border border-gren-blue py-3 px-[30px] text-[14px] rounded-3xl tracking-[0.5px] transition hover:opacity-90 text-custom-white capitalize"
                     >
-                      make a reservation
+                      {t("btn-exp")}
                     </Link>
                   </div>
                 </div>
