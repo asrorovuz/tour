@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SlideCard from "../slide-card/slide-card";
+import { useTranslation } from "react-i18next";
 
 export interface ISlideCard {
   id: string;
@@ -77,17 +78,17 @@ const BestLocation = () => {
     }
   };
 
+  const {t} = useTranslation()
+
   return (
     <div className="py-10">
       <div className="container mx-auto">
         <div className="max-w-[60%] text-center mx-auto mb-20">
           <h2 className="mb-5 text-3xl font-bold capitalize text-link-text">
-            Best Location
+            {t("best-title")}
           </h2>
           <p className="text-[15px] text-text">
-            Discover the best offers in each city, curated just for you. Immerse
-            yourself in a world of savings and indulge in unparalleled
-            experiences.
+          {t("best-c")}
           </p>
         </div>
 

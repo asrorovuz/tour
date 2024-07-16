@@ -2,8 +2,11 @@ import phone from "../../assets/icons/phone.svg";
 import mail from "../../assets/icons/mail.svg";
 import location from "../../assets/icons/location.svg";
 import ContactForm from "../myform/form";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div id="contacts" className="-translate-y-28">
       <div className="container mx-auto">
@@ -13,8 +16,8 @@ const Contact = () => {
               <div className="w-[60px] h-[60px] rounded-full bg-custom-white-100 flex items-center justify-center mb-5">
                 <img src={phone} alt="icon" />
               </div>
-              <h3 className="text-xl font-bold mb-[10px] capitalize">
-                make a phone call
+              <h3 className="text-xl font-bold mb-[10px] capitalize text-center">
+                {t("contact-c-1")}
               </h3>
               <p className="text-[15px] text-gren-blue">+998 99 299 99 96</p>
             </div>
@@ -23,8 +26,8 @@ const Contact = () => {
               <div className="w-[60px] h-[60px] rounded-full bg-custom-white-100 flex items-center justify-center mb-5">
                 <img src={mail} alt="icon" />
               </div>
-              <h3 className="text-xl font-bold mb-[10px] capitalize">
-                Contact Us via Email
+              <h3 className="text-xl font-bold mb-[10px] capitalize text-center">
+                {t("contact-c-2")}
               </h3>
               <p className="text-[15px] text-gren-blue">
                 zamonbiznestour@mail.ru
@@ -35,10 +38,10 @@ const Contact = () => {
               <div className="w-[60px] h-[60px] rounded-full bg-custom-white-100 flex items-center justify-center mb-5">
                 <img src={location} alt="icon" />
               </div>
-              <h3 className="text-xl font-bold mb-[10px]">Visit Our Offices</h3>
-              <p className="text-[15px] text-gren-blue">
-                15/25, Chilanzar - 9, Tashkent city
-              </p>
+              <h3 className="text-xl font-bold mb-[10px] text-center">
+                {t("contact-c-3")}
+              </h3>
+              <p className="text-[15px] text-gren-blue">{t("contact-c-3-1")}</p>
             </div>
           </div>
 
@@ -53,12 +56,15 @@ const Contact = () => {
             </div>
             <div className="mb-[50px] text-[30px] text-center text-[#2a2a2a] font-bold px-[30px]">
               <h2>
-                Make Your <span className="text-gren-blue">Reservation</span>{" "}
-                Through This <span className="text-gren-blue">Form</span>
+                <span className="text-gren-blue">{t("contact-t-1")}</span>{" "}
+                {t("contact-t-2")}{" "}
+                <span className="text-gren-blue">{t("contact-t-3")}</span>{" "}
+                {t("contact-t-4")}{" "}
+                <span className="text-gren-blue">{t("contact-t-5")}</span>
               </h2>
             </div>
 
-            <ContactForm/>
+            <ContactForm />
           </div>
         </div>
       </div>

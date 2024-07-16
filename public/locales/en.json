@@ -1,6 +1,7 @@
 {
     "btn-go": "Go there",
     "btn-exp":"Explore more",
+    "btn-disc": "Discover More", 
     "home": "home",
     "about": "about",
     "tours": "tours",
@@ -27,5 +28,27 @@
     "air-metr": "Airplane Bill Included",
     "home-metr": "Daily Places Visit",
     "support-title": "Visa Support",
-    "support-c": "Experience stress-free travel with our expert visa support. We provide seamless assistance and comprehensive guidance, ensuring a smooth journey."
+    "support-c": "Experience stress-free travel with our expert visa support. We provide seamless assistance and comprehensive guidance, ensuring a smooth journey.",
+    "about-title": "Explore Destinations With Ease",
+    "about-c": "Find the best deals on railway and airplane tickets in each city, carefully selected for you.",
+    "about-card-title-1": "Cheap Railway Tickets With Us",
+    "about-card-com-1": "Whole world",
+    "about-card-c-1": "Embark on a railway adventure and explore destinations worldwide. Whether it's the picturesque landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible through our extensive railway network. .",
+    "about-card-title-2": "Discover Exciting Air Travel Deals",
+    "about-card-com-2": "Global Destinations",
+    "about-card-c-2": "Embark on an airborne adventure and explore destinations worldwide. Whether it's the breathtaking landscapes, vibrant cities, or cultural treasures, our airline services provide a convenient and exhilarating way to navigate the globe. Immerse yourself in the richness of diverse cultures, all easily accessible through our extensive air travel network. .",
+    "best-title": "Best Locations",
+    "best-c": "Discover the best offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.",
+    "rever-title": "Make Your Reservation",
+    "rever-c": "Book Prefered Deal Here",
+    "contact-c-1": "Make a Phone Call",
+    "contact-c-2": "Contact Us via Email",
+    "contact-c-3": "Visit Our Offices",
+    "contact-c-3-1": "15/25, Chilanzar - 9, Tashkent city",
+    "contact-t-1": "",
+    "contact-t-2": "Make Your",
+    "contact-t-3": "Reservation",
+    "contact-t-4": "Through This",
+    "contact-t-5": "Form" 
+   
 }
