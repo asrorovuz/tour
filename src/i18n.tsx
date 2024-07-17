@@ -19,7 +19,7 @@ i18n
 .init({
     fallbackLng: "en",
     lng: languageDefault,
-    debug: true,
+    // debug: true,
     resources: {
         uz: {translation: uzTranslation},
         ru: {translation: ruTranslation},

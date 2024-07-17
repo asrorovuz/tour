@@ -14,10 +14,6 @@
   padding: 0 20px;
 }
 
-.active {
-  color: red;
-}
-
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
@@ -33,7 +29,7 @@
 
 @layer components {
   .link {
-    @apply block text-link-text border-0 border-b border-custom-white-10 text-center text-[15px] h-[50px] leading-[50px] font-normal tracking-[0.5px];
+    @apply block text-link-text border-0 border-b border-custom-white-10 text-center text-[15px] h-[50px] leading-[50px] font-medium tracking-[0.5px];
   }
 }
 

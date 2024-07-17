@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div id="about" className="pt-10">
       <div className="container mx-auto">
-        <div className="mobile:max-w-[1100px] mb-20">
+        <div className="max-w-full text-center mobile:max-w-[1100px] mobile:text-left mb-20">
           <h2 className="mb-5 text-3xl font-bold capitalize text-link-text">
             {t("about-title")}
           </h2>
@@ -24,7 +24,7 @@ const About = () => {
             <img src={afrImg} alt="img" className="w-full h-full" />
           </div>
           <div className="mobile:w-[50%]">
-            <div className="flex flex-col laptop:flex-row gap-y-8 laptop:items-center justify-between gap-x-10">
+            <div className="flex flex-col laptop:flex-row gap-y-4 laptop:items-center justify-between gap-x-10">
               <div>
                 <h3 className="text-5 mb-[5px] text-link-text font-bold">
                 {t("about-card-title-1")}
@@ -35,7 +35,7 @@ const About = () => {
                 <Link
                   to="contacts"
                   smooth
-                  className="block w-max mx-auto text-[14px] py-3 px-[30px] rounded-[25px] tracking-[0.5px] bg-gren-blue transition text-white cursor-pointer hover:opacity-80"
+                  className="block w-max text-[14px] py-3 px-[30px] rounded-[25px] tracking-[0.5px] bg-gren-blue transition text-white cursor-pointer hover:opacity-80"
                 >
                  {t("btn-exp")}
                 </Link>
@@ -52,7 +52,7 @@ const About = () => {
             <img src={airplaneImg} alt="img" className="w-full h-full" />
           </div>
           <div className="mobile:w-[50%]">
-            <div className="flex flex-col laptop:flex-row gap-y-8 laptop:items-center justify-between gap-x-10">
+            <div className="flex flex-col laptop:flex-row gap-y-4 laptop:items-center justify-between gap-x-10">
               <div>
                 <h3 className="text-5 mb-[5px] text-link-text font-bold">
                 {t("about-card-title-2")}
@@ -65,7 +65,7 @@ const About = () => {
                 <Link
                   to="contacts"
                   smooth
-                  className="block w-max mx-auto text-[14px] py-3 px-[30px] rounded-[25px] tracking-[0.5px] bg-gren-blue transition text-white cursor-pointer hover:opacity-80"
+                  className="block w-max text-[14px] py-3 px-[30px] rounded-[25px] tracking-[0.5px] bg-gren-blue transition text-white cursor-pointer hover:opacity-80"
                 >
                   {t("btn-exp")}
                 </Link>

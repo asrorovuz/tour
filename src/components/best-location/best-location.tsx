@@ -83,7 +83,7 @@ const BestLocation = () => {
   return (
     <div className="py-10">
       <div className="container mx-auto">
-        <div className="max-w-[60%] text-center mx-auto mb-20">
+        <div className="max-w-full laptop:max-w-[60%] text-center mx-auto mb-20">
           <h2 className="mb-5 text-3xl font-bold capitalize text-link-text">
             {t("best-title")}
           </h2>

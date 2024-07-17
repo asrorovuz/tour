@@ -8,7 +8,7 @@ import i18n from "../../i18n";
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
 
-  const linkArr: string[] = ["home", "about", "tours", "contacts"];
+  const linkArr: string[] = ["home", "tours", "about", "contacts"];
 
   const { t } = useTranslation();
 
@@ -41,9 +41,11 @@ const Navbar = () => {
                   <li className="px-[15px]" key={elem}>
                     <Link
                       to={elem}
-                      activeClass="active"
-                      className="link capitalize laptop:text-custom-white laptop:border-0 cursor-pointer hover:opacity-80"
-                      smooth
+                      spy={true}
+                      className={`link capitalize laptop:border-0 cursor-pointer hover:opacity-50 laptop:text-custom-white`}
+                      smooth={true}
+                      offset={-80}
+                      duration={500}
                     >
                       {t(elem)}
                     </Link>

@@ -42,7 +42,7 @@ const SupportVisa = () => {
   return (
     <div id="tour" className="py-[70px] border-b">
       <div className="container mx-auto">
-        <div className="max-w-[60%] text-center mx-auto mb-20">
+        <div className="max-w-full laptop:max-w-[60%] text-center mx-auto mb-20">
           <h2 className="mb-5 text-3xl font-bold capitalize text-link-text">
             {t("support-title")}
           </h2>
