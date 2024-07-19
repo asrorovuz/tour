@@ -9,6 +9,7 @@ import Reservation from "./reservation/reservation";
 import SupportVisa from "./support-visa/support-visa";
 import Tours from "./tours/tours";
 import loadingImg from "../assets/loading.svg";
+import ContactForm from "./myform/form";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -23,6 +24,9 @@ function App() {
     <>
       {loading ? (
         <>
+          {/* {alertLoading && }
+           */}
+           {/* <Alert content={content} test={test} /> */}
           <header className="relative min-h-[70px]">
             <Navbar />
           </header>
@@ -33,7 +37,8 @@ function App() {
             <About />
             <BestLocation />
             <Reservation />
-            <Contact />
+            <Contact/>
+            <ContactForm/>
           </main>
           <footer>
             <Footer />
