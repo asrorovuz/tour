@@ -15,6 +15,8 @@ const Navbar = () => {
   const handleChangeLang = (e: any) => {
     const languageSelect = e.target.innerText.toLowerCase();
 
+    setIsOpenMenu(false)
+
     i18n.changeLanguage(languageSelect);
   };
 

@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import "swiper/css/pagination";
 
 import { Autoplay } from "swiper/modules";
 import { Link } from "react-scroll";
@@ -15,15 +14,16 @@ const Home = () => {
   const {t} = useTranslation()
 
   return (
-    <div id="home" className="">
+    <div id="home" className="mt-[-40px]">
       <Swiper
         centeredSlides={true}
         loop
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
-        navigation={true}
+        effect={"zoom"}
+        speed={1000}
         modules={[Autoplay]}
         className="mySwiper"
       >
@@ -144,7 +144,7 @@ const Home = () => {
                     </div>
                     <div>
                       <span className="text-[15px] text-text font-normal capitalize">
-                        {t("territory")}:
+                        {t("territory")}
                       </span>
                       <h2 className="text-xl text-gren-blue font-bold ">
                         41.290 KM2
@@ -158,7 +158,7 @@ const Home = () => {
                     </div>
                     <div>
                       <span className="text-[15px] text-text font-normal capitalize">
-                        {t("price")}:
+                        {t("price")}
                       </span>
                       <h2 className="text-xl text-gren-blue font-bold ">
                         $1.100.200
@@ -220,7 +220,7 @@ const Home = () => {
                     </div>
                     <div>
                       <span className="text-[15px] text-text font-normal capitalize">
-                        {t("territory")}:
+                        {t("territory")}
                       </span>
                       <h2 className="text-xl text-gren-blue font-bold ">
                         551.500 KM2
@@ -234,7 +234,7 @@ const Home = () => {
                     </div>
                     <div>
                       <span className="text-[15px] text-text font-normal capitalize">
-                        {t("price")}:
+                        {t("price")}
                       </span>
                       <h2 className="text-xl text-gren-blue font-bold ">
                         $425.600
@@ -296,7 +296,7 @@ const Home = () => {
                     </div>
                     <div>
                       <span className="text-[15px] text-text font-normal capitalize">
-                        {t("territory")}:
+                        {t("territory")}
                       </span>
                       <h2 className="text-xl text-gren-blue font-bold ">
                         513.120 KM2
@@ -310,7 +310,7 @@ const Home = () => {
                     </div>
                     <div>
                       <span className="text-[15px] text-text font-normal capitalize">
-                        {t("price")}:
+                        {t("price")}
                       </span>
                       <h2 className="text-xl text-gren-blue font-bold ">
                         $165.450

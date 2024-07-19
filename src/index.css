@@ -27,6 +27,11 @@
   transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
 }
 
+.swiper-button-prev-home,
+.swiper-button-next-home {
+  display: block;
+}
+
 @layer components {
   .link {
     @apply block text-link-text border-0 border-b border-custom-white-10 text-center text-[15px] h-[50px] leading-[50px] font-medium tracking-[0.5px];

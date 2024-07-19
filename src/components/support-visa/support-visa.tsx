@@ -15,27 +15,11 @@ import {
 
 import candImg from "../../assets/images/hongkong.jpg";
 import { Link } from "react-scroll";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 const SupportVisa = () => {
   const swiper = useRef(null);
-  const [width, setWidth] = useState(window.innerWidth);
-  const [widthCount, setWidthCount] = useState(3)
-
-  useEffect(() => {
-    const newWidth = window.innerWidth 
-    setWidth(newWidth);
-
-    if(newWidth > 1300){
-      setWidthCount(3)
-    }else if(newWidth <= 1300 && newWidth > 800){
-      setWidthCount(2)
-    }else{
-      setWidthCount(1)
-    }
-    
-  }, [width]);
 
   const {t} = useTranslation()
 
@@ -58,11 +42,21 @@ const SupportVisa = () => {
               nextEl: ".swiper-button-next",
             }}
             autoplay={{
-              delay: 2000,
+              delay: 1500,
               disableOnInteraction: false,
             }}
             loop={true}
-            slidesPerView={widthCount}
+            breakpoints={{
+              250: {
+                slidesPerView: 1,
+              },
+              788: {
+                slidesPerView: 2,
+              },
+              987: {
+                slidesPerView: 3,
+              },
+            }}
             spaceBetween={30}
             modules={[Navigation, Autoplay]}
             className="mySwiper mb-10 pb-10 px-1"
